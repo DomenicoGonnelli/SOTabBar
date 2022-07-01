@@ -93,4 +93,13 @@ open class SOTabBarController: UIViewController, SOTabBarDelegate {
         
     }
     
+    
+    public func selectTabBarItem(didSelectTabAt index: Int){
+        tabBar(tabBar, didSelectTabAt: index)
+    }
+    
+    open func enableTabNavigation(enabled: Bool){
+        tabBar.isUserInteractionEnabled = enabled
+    }
+    
 }
